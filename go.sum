@@ -1,0 +1,8 @@
+github.com/couchbaselabs/go.assert v0.0.0-20130325201400-cfb33e3a0dac h1:E8RCOlhM2LnVvZmt08UjaLiMPKPWfH++y6//Z3Crm8E=
+github.com/couchbaselabs/go.assert v0.0.0-20130325201400-cfb33e3a0dac/go.mod h1:W+vnruoWHtjv613DcpJ9AMLGey7evBt35OU0CKxd1JE=
+github.com/couchbaselabs/logg v0.0.0-20130914200955-e6f120c4776c h1:oOMJOOfV97aJKiWe+7a464aqhTL8rq3uKe0ksztZfJ0=
+github.com/couchbaselabs/logg v0.0.0-20130914200955-e6f120c4776c/go.mod h1:zOSdIPO57FyYVeDdBszZV1P0xipiYtfh9KPeNAm5ip4=
+github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d h1:VhgPp6v9qf9Agr/56bj7Y/xa04UccTW04VP0Qed4vnQ=
+github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d/go.mod h1:YUTz3bUH2ZwIWBy3CJBeOBEugqcmXREj14T+iG/4k4U=
+github.com/streadway/amqp v1.1.0 h1:py12iX8XSyI7aN/3dUT8DFIDJazNJsVJdxNVEpnQTZM=
+github.com/streadway/amqp v1.1.0/go.mod h1:WYSrTEYHOXHd0nwFeUXAe2G2hRnQT+deZJJf88uS9Bg=

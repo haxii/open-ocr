@@ -3,10 +3,10 @@ package ocrworker
 import (
 	"encoding/json"
 	"fmt"
-	"time"
-	"github.com/nu7hatch/gouuid"
 	"github.com/couchbaselabs/logg"
+	"github.com/nu7hatch/gouuid"
 	"github.com/streadway/amqp"
+	"time"
 )
 
 const (
@@ -54,11 +54,11 @@ func (c *OcrRpcClient) DecodeImage(ocrRequest OcrRequest) (OcrResult, error) {
 	if err := c.channel.ExchangeDeclare(
 		c.rabbitConfig.Exchange,     // name
 		c.rabbitConfig.ExchangeType, // type
-		true,  // durable
-		false, // auto-deleted
-		false, // internal
-		false, // noWait
-		nil,   // arguments
+		true,                        // durable
+		false,                       // auto-deleted
+		false,                       // internal
+		false,                       // noWait
+		nil,                         // arguments
 	); err != nil {
 		return OcrResult{}, err
 	}
@@ -167,8 +167,8 @@ func (c OcrRpcClient) subscribeCallbackQueue(correlationUuid string, rpcResponse
 		callbackQueue.Name,      // name of the queue
 		callbackQueue.Name,      // bindingKey
 		c.rabbitConfig.Exchange, // sourceExchange
-		false, // noWait
-		nil,   // arguments
+		false,                   // noWait
+		nil,                     // arguments
 	); err != nil {
 		return amqp.Queue{}, err
 	}

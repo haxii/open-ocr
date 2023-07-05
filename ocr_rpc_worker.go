@@ -56,11 +56,11 @@ func (w OcrRpcWorker) Run() error {
 	if err = w.channel.ExchangeDeclare(
 		w.rabbitConfig.Exchange,     // name of the exchange
 		w.rabbitConfig.ExchangeType, // type
-		true,  // durable
-		false, // delete when complete
-		false, // internal
-		false, // noWait
-		nil,   // arguments
+		true,                        // durable
+		false,                       // delete when complete
+		false,                       // internal
+		false,                       // noWait
+		nil,                         // arguments
 	); err != nil {
 		return err
 	}
@@ -87,8 +87,8 @@ func (w OcrRpcWorker) Run() error {
 		queue.Name,                // name of the queue
 		w.rabbitConfig.RoutingKey, // bindingKey
 		w.rabbitConfig.Exchange,   // sourceExchange
-		false, // noWait
-		nil,   // arguments
+		false,                     // noWait
+		nil,                       // arguments
 	); err != nil {
 		return err
 	}

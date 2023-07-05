@@ -2,13 +2,13 @@
 swagger: '2.0'
 info:
   version: 1.0.0
-  title: OpenOCR 
+  title: OpenOCR
   description: OpenOCR is a wrapper around Tesseract easily deployable as a service
   contact:
     name: Traun Leyden
     email: traun.leyden@gmail.com
   license:
-     name: Apache2 License
+    name: Apache2 License
 schemes:
   - http
 basePath: /
